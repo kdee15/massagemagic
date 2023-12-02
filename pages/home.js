@@ -34,8 +34,8 @@ export default function Home({ Page }) {
   const threeImages = Page[0].fields.components[2].fields;
   const skincare = Page[0].fields.components[3].fields;
   const pageTitle = Page[0].fields.components[4].fields;
-  const skincareEveryday = Page[0].fields.components[5].fields;
-  const therapists = Page[0].fields.components[6].fields;
+  const therapists = Page[0].fields.components[5].fields;
+  const skincareEveryday = Page[0].fields.components[6].fields;
 
   return (
     <div className="anchor" id="top">
@@ -44,8 +44,8 @@ export default function Home({ Page }) {
       <ThreeColumnTitleImages contentModule={threeImages} />
       <TitleImageCopyCTACardGrid contentModule={skincare} />
       <ComponentSimpleTitle contentModule={pageTitle} />
-      <TitleImageCopyCTACardGrid contentModule={therapists} />
       <HeroBanner contentModule={skincareEveryday} />
+      <TitleImageCopyCTACardGrid contentModule={therapists} />
     </div>
   );
 }

@@ -23,7 +23,7 @@ h2 *,
 .fntH2 * {
   font-family: $font;
   font-weight: 800;
-  @include scaledFont(24, 36, 36, 30, 36, 36);
+  @include scaledFont(24, 36, 36, 30, 38, 38);
 }
 
 h3,

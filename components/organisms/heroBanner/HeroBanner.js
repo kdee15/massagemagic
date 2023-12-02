@@ -14,11 +14,11 @@ export default function HeroBanner(contentModule) {
 
   const { title, image, imageForMobile, boxPosition, logo, tagLine } =
     contentModule.contentModule;
-  console.log("HeroBanner", contentModule);
+
   return (
     <section
       className={`${classes.oHeroBanner} ${
-        boxPosition ? classes[boxPosition] : null
+        boxPosition && classes[boxPosition]
       }`}
     >
       {mobileView ? (
