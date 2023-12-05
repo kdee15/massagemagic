@@ -2,44 +2,68 @@
 
 @import "scss/.base/module-index";
 
-// A. GLOBAL STYLES +++++++++++++++++++++++++++++++++++++
+.oTitleImageCopyCTACardGrid {
+  // A. GLOBAL STYLES +++++++++++++++++++++++++++++++++++++
 
-.introBlock {
-  height: 80vh;
-  text-align: center;
-  .aTitle {
-    margin: 25vh 0 0;
+  .mTitleRegion {
+    .aTitle {
+      margin-bottom: 30px;
+    }
+    max-width: 600px;
+    margin: 50px auto;
+    text-align: center;
   }
+
+  .oCard {
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+    padding: 30px;
+
+    .mImage {
+      @include position(absolute, 0);
+      @include background(cover);
+      z-index: 0;
+      opacity: 0.3;
+    }
+    .aTitle {
+      margin-bottom: 20px;
+    }
+    .mText {
+      position: relative;
+      z-index: 1;
+    }
+  }
+
+  // A. END +++++++++++++++++++++++++++++++++++++++++++++++
+
+  // B. GRACEFUL DEGRADATION ++++++++++++++++++++++++++++++
+
+  @media ($md-dn) {
+  }
+
+  // B. END +++++++++++++++++++++++++++++++++++++++++++++++
+
+  // C. MIN-WIDTH: 768px ++++++++++++++++++++++++++++++++++
+
+  @media ($md-up) {
+  }
+
+  // C. END +++++++++++++++++++++++++++++++++++++++++++++++
+
+  // D. MIN-WIDTH: 992px ++++++++++++++++++++++++++++++++++
+
+  @media ($md-up) {
+  }
+
+  // D. END +++++++++++++++++++++++++++++++++++++++++++++++
+
+  // E. MIN-WIDTH: 1200px +++++++++++++++++++++++++++++++++
+
+  @media ($lg-up) {
+  }
+
+  // E. END +++++++++++++++++++++++++++++++++++++++++++++++
 }
-
-// A. END +++++++++++++++++++++++++++++++++++++++++++++++
-
-// B. GRACEFUL DEGRADATION ++++++++++++++++++++++++++++++
-
-@media ($md-dn) {
-}
-
-// B. END +++++++++++++++++++++++++++++++++++++++++++++++
-
-// C. MIN-WIDTH: 768px ++++++++++++++++++++++++++++++++++
-
-@media ($md-up) {
-}
-
-// C. END +++++++++++++++++++++++++++++++++++++++++++++++
-
-// D. MIN-WIDTH: 992px ++++++++++++++++++++++++++++++++++
-
-@media ($md-up) {
-}
-
-// D. END +++++++++++++++++++++++++++++++++++++++++++++++
-
-// E. MIN-WIDTH: 1200px +++++++++++++++++++++++++++++++++
-
-@media ($lg-up) {
-}
-
-// E. END +++++++++++++++++++++++++++++++++++++++++++++++
 
 // END OF FILE ########################################################################################################

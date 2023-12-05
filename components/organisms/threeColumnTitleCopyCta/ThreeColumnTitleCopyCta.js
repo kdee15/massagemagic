@@ -3,7 +3,6 @@ import { documentToReactComponents } from "@contentful/rich-text-react-renderer"
 import classes from "./ThreeColumnTitleCopyCta.module.scss";
 
 export default function ThreeColumnTitleCopyCta(contentModule) {
-  console.log("ThreeColumnTitleCopyCta", contentModule);
   const { title, copy, copy2, moreLink } = contentModule.contentModule;
   return (
     <section className={classes.oThreeColumnTitleCopyCta}>
