@@ -30,7 +30,7 @@ h3,
 h3 *,
 .fntH3,
 .fntH3 * {
-  @include scaledFont(16, 18, 18, 20, 22, 22);
+  @include scaledFont(18, 24, 24, 22, 28, 28);
   font-family: $font;
   font-weight: 800;
 }
@@ -73,6 +73,11 @@ p *,
 .fnt18,
 .fnt18 * {
   @include scaledFont(14, 18, 18, 16, 21, 21);
+}
+
+.fnt14,
+.fnt14 * {
+  @include scaledFont(12, 14, 14, 16, 22, 22);
 }
 
 // A.1. END -----------------------------------------------

@@ -2,13 +2,19 @@
 
 @import "scss/.base/module-index";
 
-// A. GLOBAL STYLES +++++++++++++++++++++++++++++++++++++
-
-.oThreeColumnTitleCopyCta {
+.oThreeColumnTitleImageCopy {
+  // A. GLOBAL STYLES +++++++++++++++++++++++++++++++++++++
   padding: 80px 0;
 
   .oContainer {
     max-width: 1170px;
+  }
+
+  .mImage {
+    aspect-ratio: 1/1;
+    @include background(cover);
+    position: relative;
+    overflow: hidden;
   }
 
   .oBox {
@@ -29,12 +35,6 @@
   }
 
   .mText {
-    margin-top: 0;
-    text-align: justify;
-  }
-
-  .aLink {
-    margin: 30px 0 0 0;
   }
 
   // A. END +++++++++++++++++++++++++++++++++++++++++++++++
@@ -65,7 +65,7 @@
   @media ($lg-up) {
   }
 
-  // E. END +++++++++++++++++++++++++++++++++++++++++++++++}
+  // E. END +++++++++++++++++++++++++++++++++++++++++++++++
 }
 
 // END OF FILE ########################################################################################################
