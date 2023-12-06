@@ -4,7 +4,7 @@
 
 .oThreeColumnTitleImages {
   // A. GLOBAL STYLES +++++++++++++++++++++++++++++++++++++
-  padding: 80px 0;
+  padding: 40px 0;
 
   .oContainer {
     max-width: 1170px;
@@ -26,8 +26,7 @@
     padding: 30px;
     aspect-ratio: 1/1;
     border: 3px solid black;
-    margin-right: auto;
-    margin-left: 0;
+    margin: 40px auto;
   }
 
   .aTitle {
@@ -50,6 +49,9 @@
   // C. MIN-WIDTH: 768px ++++++++++++++++++++++++++++++++++
 
   @media ($md-up) {
+    .oBox {
+      margin: 0 0 0 auto;
+    }
   }
 
   // C. END +++++++++++++++++++++++++++++++++++++++++++++++
@@ -57,6 +59,7 @@
   // D. MIN-WIDTH: 992px ++++++++++++++++++++++++++++++++++
 
   @media ($md-up) {
+    padding: 80px 0;
   }
 
   // D. END +++++++++++++++++++++++++++++++++++++++++++++++
