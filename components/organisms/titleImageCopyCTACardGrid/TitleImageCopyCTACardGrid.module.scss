@@ -6,12 +6,15 @@
   // A. GLOBAL STYLES +++++++++++++++++++++++++++++++++++++
 
   .mTitleRegion {
-    .aTitle {
-      margin-bottom: 30px;
-    }
     max-width: 600px;
     margin: 50px auto;
     text-align: center;
+    .aTitle {
+      margin-bottom: 30px;
+    }
+    .mText {
+      padding: 0 30px;
+    }
   }
 
   .oCard {
@@ -33,6 +36,10 @@
       position: relative;
       z-index: 1;
     }
+
+    &.imageBackground {
+      aspect-ratio: 1/1;
+    }
   }
 
   // A. END +++++++++++++++++++++++++++++++++++++++++++++++
@@ -47,6 +54,11 @@
   // C. MIN-WIDTH: 768px ++++++++++++++++++++++++++++++++++
 
   @media ($md-up) {
+    .oCard {
+      &.imageBackground {
+        aspect-ratio: auto;
+      }
+    }
   }
 
   // C. END +++++++++++++++++++++++++++++++++++++++++++++++

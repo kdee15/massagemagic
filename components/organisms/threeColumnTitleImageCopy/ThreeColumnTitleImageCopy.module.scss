@@ -26,15 +26,15 @@
     padding: 30px;
     aspect-ratio: 1/1;
     border: 3px solid black;
-    margin-right: auto;
-    margin-left: 0;
+    margin: 0 auto;
   }
 
   .aTitle {
     text-transform: uppercase;
   }
 
-  .mText {
+  .oCol {
+    margin-bottom: 50px;
   }
 
   // A. END +++++++++++++++++++++++++++++++++++++++++++++++
@@ -49,6 +49,12 @@
   // C. MIN-WIDTH: 768px ++++++++++++++++++++++++++++++++++
 
   @media ($md-up) {
+    .oBox {
+      margin: 0 0 0 auto;
+    }
+    .oCol {
+      margin-bottom: 0;
+    }
   }
 
   // C. END +++++++++++++++++++++++++++++++++++++++++++++++

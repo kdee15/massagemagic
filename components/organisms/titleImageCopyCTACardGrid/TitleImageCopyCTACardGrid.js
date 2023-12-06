@@ -8,7 +8,9 @@ export default function TitleImageCopyCTACardGrid(contentModule) {
     <section className={classes.oTitleImageCopyCTACardGrid}>
       <div className={classes.mTitleRegion}>
         <h2 className={`${classes.aTitle} fntH2`}>{title}</h2>
-        <div>{documentToReactComponents(copy)}</div>
+        <div className={`${classes.mText} fnt18`}>
+          {documentToReactComponents(copy)}
+        </div>
       </div>
       <div className={`${classes.oContainer} container`}>
         <div className={`${classes.oRow} row`}>
