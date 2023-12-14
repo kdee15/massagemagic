@@ -27,44 +27,49 @@ export default function Nav() {
           </li>
           <li className={classes.navLink}>
             <a className={classes.aLink} href="#about" onClick={handleToggle}>
-              About
-            </a>
-          </li>
-          <li className={classes.navLink}>
-            <a className={classes.aLink} href="#tania" onClick={handleToggle}>
-              Tania Molteno
-            </a>
-          </li>
-          <li className={classes.navLink}>
-            <a className={classes.aLink} href="#adele" onClick={handleToggle}>
-              Adele Segers
+              ABOUT
             </a>
           </li>
           <li className={classes.navLink}>
             <a
               className={classes.aLink}
-              href="#management"
+              href="#reflexology"
               onClick={handleToggle}
             >
-              Talent Management Solutions
+              REFLEXOLOGY
+            </a>
+          </li>
+          <li className={classes.navLink}>
+            <a className={classes.aLink} href="#massage" onClick={handleToggle}>
+              MASSAGE
+            </a>
+          </li>
+          <li className={classes.navLink}>
+            <a className={classes.aLink} href="#facials" onClick={handleToggle}>
+              FACIALS
             </a>
           </li>
           <li className={classes.navLink}>
             <a
               className={classes.aLink}
-              href="#consulting"
+              href="#skincareEveryday"
               onClick={handleToggle}
             >
-              Labour Consulting
+              SKINCARE EVERY DAY
             </a>
           </li>
           <li className={classes.navLink}>
             <a
               className={classes.aLink}
-              href="#training"
+              href="#manicures"
               onClick={handleToggle}
             >
-              Training
+              MANICURES
+            </a>
+          </li>
+          <li className={classes.navLink}>
+            <a className={classes.aLink} href="#contact" onClick={handleToggle}>
+              CONTACT
             </a>
           </li>
         </ul>
