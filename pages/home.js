@@ -7,6 +7,7 @@ import ImageGalleryGrid from "../components/blocks/imageGalleryGrid/ImageGallery
 import ThreeColumnTitleImageCopy from "../components/organisms/threeColumnTitleImageCopy/ThreeColumnTitleImageCopy";
 import ContactForm from "../components/organisms/contactForm/ContactForm";
 import Nav from "../components/molecules/nav/Nav";
+import Footer from "../components/blocks/footer/Footer";
 const { C_SPACE_ID, C_DELIVERY_KEY } = require("../helpers/contentful-config");
 
 export async function getStaticProps(context) {
@@ -23,15 +24,21 @@ export async function getStaticProps(context) {
 
     .then((entries) => entries.items);
 
+  const resFooter = await client.getEntries({
+    content_type: "componentFooter",
+    include: 10,
+  });
+
   return {
     props: {
       Page: resPage,
+      PageFooter: resFooter.items[0].fields,
     },
     revalidate: 1,
   };
 }
 
-export default function Home({ Page }) {
+export default function Home({ Page, PageFooter }) {
   const heroBanner = Page[0].fields.components[0].fields;
   const spaServices = Page[0].fields.components[1].fields;
   const threeImages = Page[0].fields.components[2].fields;
@@ -59,6 +66,7 @@ export default function Home({ Page }) {
       <ThreeColumnTitleImageCopy contentModule={manicures} />
       <div className="anchor" id="contact"></div>
       <ContactForm contentModule={contact} />
+      <Footer contentModule={PageFooter} />
     </div>
   );
 }
