@@ -63,6 +63,11 @@ fntH5 * {
   @include font(30);
 }
 
+.fnt28,
+.fnt28 * {
+  @include scaledFont(20, 28, 28, 24, 32, 32);
+}
+
 .fnt18f,
 .fnt18f * {
   @include font(18);
@@ -75,9 +80,19 @@ p *,
   @include scaledFont(14, 18, 18, 16, 21, 21);
 }
 
+.fnt16f,
+.fnt16f * {
+  @include font(16);
+}
+
 .fnt14,
 .fnt14 * {
   @include scaledFont(12, 14, 14, 16, 22, 22);
+}
+.fnt12,
+.fnt12 * {
+  @include font(12);
+  line-height: 12px;
 }
 
 // A.1. END -----------------------------------------------

@@ -6,10 +6,10 @@
 
 $btn-clr: white;
 $btn-clr-2: $green;
-$btn-border-color: pink;
+$btn-border-color: $green;
 $buttonFont: $font;
 $buttonFontWeight: 500;
-$buttonFontSize: 16px;
+$buttonFontSize: 18px;
 $buttonLineHeight: 1;
 $buttonMinWidth: 150px;
 
@@ -32,8 +32,8 @@ $radius-lrg: 0;
   font-style: normal;
   font-family: $buttonFont;
   font-weight: $buttonFontWeight;
-  //font-size: $buttonFontSize;
-  //line-height: $buttonLineHeight;
+  font-size: $buttonFontSize;
+  line-height: $buttonLineHeight;
   text-align: center;
   text-transform: none;
   text-decoration: none;
