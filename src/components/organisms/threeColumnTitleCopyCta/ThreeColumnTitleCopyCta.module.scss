@@ -1,0 +1,82 @@
+// MOLECULE [ NAVIGATION ] ############################################################################################
+
+@import "../../../scss/.base/_module-index";
+
+// A. GLOBAL STYLES +++++++++++++++++++++++++++++++++++++
+
+.oThreeColumnTitleCopyCta {
+  padding: 40px 0 0;
+
+  .oContainer {
+    max-width: 1170px;
+  }
+
+  .oBox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    max-width: 500px;
+    padding: 30px;
+    aspect-ratio: 1/1;
+    border: 3px solid black;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .aTitle {
+    text-transform: uppercase;
+  }
+
+  .mText {
+    margin-top: 0;
+    text-align: justify;
+  }
+
+  .aLink {
+    margin: 30px 0 0 0;
+  }
+
+  .oCol {
+    margin-bottom: 30px;
+  }
+
+  // A. END +++++++++++++++++++++++++++++++++++++++++++++++
+
+  // B. GRACEFUL DEGRADATION ++++++++++++++++++++++++++++++
+
+  @media ($md-dn) {
+  }
+
+  // B. END +++++++++++++++++++++++++++++++++++++++++++++++
+
+  // C. MIN-WIDTH: 768px ++++++++++++++++++++++++++++++++++
+
+  @media ($md-up) {
+  }
+
+  // C. END +++++++++++++++++++++++++++++++++++++++++++++++
+
+  // D. MIN-WIDTH: 992px ++++++++++++++++++++++++++++++++++
+
+  @media ($md-up) {
+    padding: 80px 0;
+    .oBox {
+      margin-left: 0;
+    }
+    .oCol {
+      margin-bottom: 0;
+    }
+  }
+
+  // D. END +++++++++++++++++++++++++++++++++++++++++++++++
+
+  // E. MIN-WIDTH: 1200px +++++++++++++++++++++++++++++++++
+
+  @media ($lg-up) {
+  }
+
+  // E. END +++++++++++++++++++++++++++++++++++++++++++++++}
+}
+
+// END OF FILE ########################################################################################################
