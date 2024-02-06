@@ -17,10 +17,11 @@ export default function ThreeColumnTitleCopyCta(contentModule) {
             <div className={`${classes.mText}`}>
               {documentToReactComponents(copy2)}
               {moreLink?.fields?.label && (
-                <Link href={moreLink.fields.url}>
-                  <a className={`${classes.aLink} aBtn`}>
-                    {moreLink.fields.label}
-                  </a>
+                <Link
+                  href={moreLink.fields.url}
+                  className={`${classes.aLink} aBtn`}
+                >
+                  {moreLink.fields.label}
                 </Link>
               )}
             </div>
