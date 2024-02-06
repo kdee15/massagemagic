@@ -1,0 +1,98 @@
+// MOLECULE [ NAVIGATION ] ############################################################################################
+
+@import "../../../scss/.base/_module-index";
+
+.oHeroBanner {
+  // A. GLOBAL STYLES +++++++++++++++++++++++++++++++++++++
+
+  min-height: 100vh;
+  position: relative;
+
+  .oBox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    max-width: 500px;
+    padding: 70px;
+    aspect-ratio: 1/1;
+    border: 3px solid black;
+    margin-right: auto;
+    margin-left: 0;
+
+    .aTitle {
+      text-transform: uppercase;
+      margin-bottom: 30px;
+    }
+
+    .aText {
+      font-style: italic;
+    }
+  }
+
+  &.left {
+    .oBox {
+      margin-right: auto;
+      margin-left: 0;
+    }
+  }
+  &.center {
+    .oBox {
+      margin-right: auto;
+      margin-left: auto;
+    }
+  }
+  &.right {
+    .oBox {
+      margin-left: auto;
+      margin-right: 0;
+    }
+  }
+
+  .mBackground {
+    @include background(cover);
+    z-index: 0;
+  }
+
+  .oContainer {
+    z-index: 1;
+    position: relative;
+  }
+
+  .oRow {
+    min-height: 100vh;
+    align-content: center;
+  }
+
+  // A. END +++++++++++++++++++++++++++++++++++++++++++++++
+
+  // B. GRACEFUL DEGRADATION ++++++++++++++++++++++++++++++
+
+  @media ($md-dn) {
+  }
+
+  // B. END +++++++++++++++++++++++++++++++++++++++++++++++
+
+  // C. MIN-WIDTH: 768px ++++++++++++++++++++++++++++++++++
+
+  @media ($md-up) {
+  }
+
+  // C. END +++++++++++++++++++++++++++++++++++++++++++++++
+
+  // D. MIN-WIDTH: 992px ++++++++++++++++++++++++++++++++++
+
+  @media ($md-up) {
+  }
+
+  // D. END +++++++++++++++++++++++++++++++++++++++++++++++
+
+  // E. MIN-WIDTH: 1200px +++++++++++++++++++++++++++++++++
+
+  @media ($lg-up) {
+  }
+
+  // E. END +++++++++++++++++++++++++++++++++++++++++++++++
+}
+
+// END OF FILE ########################################################################################################

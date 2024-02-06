@@ -1,0 +1,81 @@
+// MOLECULE [ NAVIGATION ] ############################################################################################
+
+@import "../../../scss/.base/_module-index";
+
+.oTitleImageCopyCTACardGrid {
+  // A. GLOBAL STYLES +++++++++++++++++++++++++++++++++++++
+
+  .mTitleRegion {
+    max-width: 600px;
+    margin: 50px auto;
+    text-align: center;
+    .aTitle {
+      margin-bottom: 30px;
+    }
+    .mText {
+      padding: 0 30px;
+    }
+  }
+
+  .oCard {
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+    padding: 30px;
+
+    .mImage {
+      @include position(absolute, 0);
+      @include background(cover);
+      z-index: 0;
+      opacity: 0.3;
+    }
+    .aTitle {
+      margin-bottom: 20px;
+    }
+    .mText {
+      position: relative;
+      z-index: 1;
+    }
+
+    &.imageBackground {
+      aspect-ratio: 1/1;
+    }
+  }
+
+  // A. END +++++++++++++++++++++++++++++++++++++++++++++++
+
+  // B. GRACEFUL DEGRADATION ++++++++++++++++++++++++++++++
+
+  @media ($md-dn) {
+  }
+
+  // B. END +++++++++++++++++++++++++++++++++++++++++++++++
+
+  // C. MIN-WIDTH: 768px ++++++++++++++++++++++++++++++++++
+
+  @media ($md-up) {
+    .oCard {
+      &.imageBackground {
+        aspect-ratio: auto;
+      }
+    }
+  }
+
+  // C. END +++++++++++++++++++++++++++++++++++++++++++++++
+
+  // D. MIN-WIDTH: 992px ++++++++++++++++++++++++++++++++++
+
+  @media ($md-up) {
+  }
+
+  // D. END +++++++++++++++++++++++++++++++++++++++++++++++
+
+  // E. MIN-WIDTH: 1200px +++++++++++++++++++++++++++++++++
+
+  @media ($lg-up) {
+  }
+
+  // E. END +++++++++++++++++++++++++++++++++++++++++++++++
+}
+
+// END OF FILE ########################################################################################################
